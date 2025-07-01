@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Isaac Mbuthi - Autobiography</title>
   <style>
     body {
@@ -32,7 +32,7 @@
       margin-top: 0;
     }
 
-    p {
+    p, li {
       line-height: 1.6;
       color: #e0f7fa;
     }
@@ -60,6 +60,50 @@
       border: 2px solid #00ff88;
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #00ff88;
+      padding: 10px;
+      text-align: left;
+      color: #fff;
+    }
+
+    th {
+      background-color: #00796b;
+    }
+
+    form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #00ff88;
+      border: none;
+      padding: 10px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1de9b6;
+    }
+
     @media (max-width: 600px) {
       .container {
         margin: 20px;
@@ -75,29 +119,72 @@
 </head>
 <body>
   <div class="container">
+    <!-- Title -->
     <h1>AUTOBIOGRAPHY</h1>
 
+    <!-- Profile Section -->
     <div class="profile">
-      <img src="IMG_20241224_180528.jpg" alt="Isaac Mbuthi's photo">
+      <img src="img/IMG_20241224_180528.jpg" alt="Isaac Mbuthi's photo" />
       <p>My name is Isaac Mbuthi.</p>
     </div>
 
+    <!-- Bio -->
     <h2>Short Bio</h2>
     <p>
       Hi, I'm Isaac, a university student with a passion for technology and art. I'm currently studying software engineering and love working on creative projects in my free time, exploring how tech transforms the world.
     </p>
 
+    <!-- Favorite Websites -->
     <h3>Favourite Websites</h3>
-    <p>
-      These are some of the websites I enjoy using for study, entertainment, and inspiration:
-      <ul>
-        <li>Goojara – <a href="https://ww1.goojara.to/" target="_blank">Visit Goojara</a></li>
-        <li>W3Schools – <a href="https://www.w3schools.com/" target="_blank">Learn with W3Schools</a></li>
-        <li>Spotify – <a href="https://open.spotify.com/" target="_blank">Submerge into Spotify</a></li>
-        <li>YouTube – <a href="https://www.youtube.com/" target="_blank">Explore YouTube</a></li>
-        <li>GitHub – <a href="https://github.com/" target="_blank">Visit GitHub</a></li>
-      </ul>
-    </p>
+    <ul>
+      <li><a href="https://ww1.goojara.to/" target="_blank">Goojara</a></li>
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      <li><a href="https://open.spotify.com/" target="_blank">Spotify</a></li>
+      <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+    </ul>
+
+    <!-- Skills Table -->
+    <h3>Top 5 Skills</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Proficiency Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML & CSS</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Git & GitHub</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>Beginner</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Contact Form -->
+    <h3>Contact Me</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </div>
 </body>
 </html>
